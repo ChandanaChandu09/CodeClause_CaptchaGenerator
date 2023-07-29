@@ -28,7 +28,7 @@ public class captcha extends JFrame {
         //length of the captcha is 6
         for (int i = 0; i < 6; i++)
         {
-            char c = captchachar.charAt(random.nextInt(characters.length()));
+            char c = captchachar.charAt(random.nextInt(captchachar.length()));
             captcha.append(c);
         }
         return captcha.toString();
