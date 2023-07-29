@@ -21,14 +21,14 @@ public class captcha extends JFrame {
 
     public String generateCaptcha() {
         //captcha generation using random
-        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        String captchachar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         StringBuilder captcha = new StringBuilder();
         Random random = new Random();
 
         //length of the captcha is 6
         for (int i = 0; i < 6; i++)
         {
-            char c = characters.charAt(random.nextInt(characters.length()));
+            char c = captchachar.charAt(random.nextInt(characters.length()));
             captcha.append(c);
         }
         return captcha.toString();
